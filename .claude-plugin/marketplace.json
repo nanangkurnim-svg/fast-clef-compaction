@@ -1,0 +1,15 @@
+{
+  "name": "fast-clef-compaction",
+  "owner": {
+    "name": "local fork of tamaratran/fast-jev-compaction"
+  },
+  "plugins": [
+    {
+      "name": "fast-clef-compaction",
+      "source": "./",
+      "description": "Verbatim Clef-guided compaction for Claude Code sessions, via Cloudflare Workers AI.",
+      "version": "0.3.0",
+      "license": "MIT"
+    }
+  ]
+}
