@@ -1,6 +1,6 @@
 {
   "name": "fast-clef-compaction",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Verbatim Clef-guided compaction for Claude Code sessions, via Cloudflare Workers AI.",
   "license": "MIT",
   "userConfig": {
