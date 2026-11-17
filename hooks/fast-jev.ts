@@ -243,10 +243,13 @@ async function getEnvValue(
     settings: { read: () => Promise<Readonly<Record<string, unknown>>> };
   },
   configured: string | undefined,
-  name: string,
+  name: 'CLOUDFLARE_API_TOKEN' | 'CLOUDFLARE_ACCOUNT_ID',
 ): Promise<string | undefined> {
   if (configured) return configured;
-  const fromEnv = await $.env.get(name);
+  const fromEnv =
+    name === 'CLOUDFLARE_API_TOKEN'
+      ? await $.env.get('CLOUDFLARE_API_TOKEN')
+      : await $.env.get('CLOUDFLARE_ACCOUNT_ID');
   if (fromEnv) return fromEnv;
   const settings = await $.settings.read();
   const env = settings['env'];

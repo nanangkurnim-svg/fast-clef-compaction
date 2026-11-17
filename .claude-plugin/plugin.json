@@ -63,5 +63,8 @@
       "description": "clef or clef-flash.",
       "default": "clef"
     }
+  },
+  "author": {
+    "name": "nanangkurnim-svg"
   }
 }

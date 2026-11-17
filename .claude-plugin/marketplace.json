@@ -11,5 +11,6 @@
       "version": "0.3.0",
       "license": "MIT"
     }
-  ]
+  ],
+  "description": "Clef-guided verbatim compaction for Claude Code."
 }
